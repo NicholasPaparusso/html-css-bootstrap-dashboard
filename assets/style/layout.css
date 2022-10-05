@@ -1,0 +1,31 @@
+header{
+  height: 70px;
+  background-color: #f8f9fa;
+}
+
+.main-wrapper{
+  overflow-y: scroll;
+}
+.main-wrapper .row{
+  height: calc(100vh - 70px);
+}
+
+.aside{
+  background-color: yellow;
+}
+
+.np-left{
+  background-color: blue;
+  min-height: 85%;
+}
+
+.np-right{
+  background-color: aqua;
+  min-height: 85%;
+}
+
+.np-top
+{
+  background-color: red;
+  min-height: 15%;
+}
