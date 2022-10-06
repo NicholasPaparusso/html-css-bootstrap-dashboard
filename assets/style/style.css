@@ -114,3 +114,10 @@ header .dropdown-menu{
   border-top: none !important;
 }
 /* Main-left */
+
+/* Main-Right */
+.np-right label{
+  font-weight: normal;
+}
+
+/* Main-Right */
