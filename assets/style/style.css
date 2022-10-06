@@ -3,3 +3,114 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 /* General */
+
+/* Header */
+header .mobile-logo img{
+  min-width: 30px;
+}
+
+header form input:focus, header form input:focus-visible {
+  box-shadow: unset !important;
+
+}
+
+
+.mod .form-control {
+  padding-left: 2rem;
+  position: relative;
+  top:0;
+  left: 0;
+  background-color: #e5e5e5;
+}
+
+.mod .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  pointer-events: none;
+  color: black;
+}
+
+header ul{
+  justify-content:space-between;
+}
+
+header ul li i{
+  font-size: 1em;
+  color: #5b5858;
+}
+
+header .fa-bell{
+  color: #ff8f00;
+}
+
+header .dropdown-menu{
+  top: 46.5px !important;
+  right: -16px !important;
+  transform: translate(0 , 0) !important;
+}
+
+/* Aside */
+.aside{
+  font-family: 'Poppins', sans-serif;
+}
+
+.aside i{
+  font-size: 1.2em;
+  margin-right: .1em;
+  vertical-align: middle;
+}
+
+.aside small{
+  font-size: .7em;
+}
+
+
+/* Aside */
+
+/* Main top-bar */
+.np-top h2{
+  color: white;
+
+}
+
+.np-top .btn-np{
+  background-color: #155cba;
+  color: white;
+  border-radius: 20px;
+  padding: 0 .8em;
+  margin-right: .4em ;
+  height: 25px;
+  line-height: 25px;
+}
+
+.np-top ul li i{
+  color: white;
+  margin-right: .4em;
+}
+.np-top h6, .np-top span{
+  color: white;
+}
+.np-top span{
+  font-size: 2.3em;
+  padding-right: 10px;
+}
+/* Main top-bar */
+
+/* Main-left */
+.np-left img{
+  width: 30px;
+  margin-right: 20px;
+}
+
+.np-left .btn-np{
+  color: white ;
+}
+
+.np-left table{
+  border-top: none !important;
+}
+/* Main-left */

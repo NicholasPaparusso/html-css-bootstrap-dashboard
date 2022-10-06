@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="./assets/img/mobile-logo.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/style/effect.css">
   <link rel="stylesheet" href="./assets/style/style.css">
   <link rel="stylesheet" href="./assets/style/media.css">
@@ -18,12 +20,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Bootstrap-Dashboard</title>
 </head>
 <body>   
   <!-- Header -->
   <header>
-    <div class="container-fluid"></div>
+    <div class="container-fluid bg-light h-100">
+      <div class="row d-flex align-items-center justify-content-between h-100">
+        <div class="col-1 d-flex align-items-center justify-content-between h-100">
+          <div class="d-none  d-xl-block logo">
+            <a href="#">
+              <img class="bg-light" src="./assets/img/logo.svg" alt="logo">
+            </a>
+          </div>
+          <div class="d-xl-none mobile-logo">
+            <a href="#">
+              <img src="./assets/img/mobile-logo.png" alt="logo">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-10 d-flex align-items-center justify-content-between h-100">
+          <nav class="navbar w-100 bg-light">
+            <div class="container-fluid">
+
+              <form class="d-flex mod w-100" role="search">
+                <span class="fa fa-search mod form-control-feedback"></span>
+                <input class="form-control" type="search" placeholder="Cerca" aria-label="Search">
+              </form>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-1 d-flex h-100 p-0 ">
+          <ul class="d-flex h-100 w-100 align-items-center me-3  p-0">
+            <li class="d-none d-xl-flex"><a href="#"><i class="fa-solid fa-list"></i></a></li>
+            <li class="d-none d-xl-flex"><a href="#"><i class="fa-solid fa-circle-question"></i></a></li>
+            <li class="d-none d-xl-flex"><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
   <!-- Header -->
   <!-- Main -->
@@ -32,21 +77,257 @@
       <div class="row">
 
         <!-- Aside-nav-bar -->
-        <div class="col-1 aside ">
+        <div class="col-1 aside d-flex flex-column justify-content-between align-items-center pb-4 pt-2">
+      
+            <ul class="p-0 h-100 d-flex flex-column ">
+              <li class="text-light  mb-3"><a href="#" class="p-1">
+                <i class="fa-solid fa-house"></i> <small>Home</small>
+              </a></li>
+              <li class="text-light  mb-3"><a href="#" class="p-1">
+                <i class="fa-solid fa-chart-simple"></i> <small>Stats</small>
+              </a></li>
+              <li class="text-light"><a href="#" class="p-1">
+                <i class="fa-solid fa-signal"></i> <small>Signals</small>
+              </a></li>
+            </ul>
 
-        </div>
+            <a href="#" class=" text-light">
+              <i class="fa-solid fa-gear"></i> <small>Admin</small>
+            </a>
+
+        </div>      
         <!-- Aside-nav-bar -->
 
-        <!-- Main-content -->
+        <!-- Main-content --> 
         <div class="col-11 main">
          
           <div class="row">
-            <div class="col-12 np-top">
+             <!-- Main top-bar -->
+            <div class="col-12 np-top bg-primary p-3">
+              <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="col d-flex">
+                    <h2 class="me-3"><a href="#">Boolean</a></h2>
+                    <a class="btn btn-np btn-sm mt-2" href="#" role="button">Piano blaze</a>
+                  </div>
+                  <div class="col d-flex">
+                    <ul class="p-0 d-flex">
+                      <li>
+                        <a class="btn btn-np btn-sm" href="#" role="button">3 App</a>
+                      </li class="nav-item dropdown">
+                      <li class="d-xl-none">
+                        <a class="btn btn-np btn-sm nav-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">+</i></a>
+
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Boolean mobile app</a></li>
+                          <li><a class="dropdown-item" href="#">Boolean web app</a></li>
+                          <li><a class="dropdown-item" href="#">Boolean blog app</a></li>
+                        </ul>
+
+                      </li>
+                      <li class="d-xl-none">
+                        <i class="fa-solid fa-angles-right"></i>
+                      </li>
+                      <li class="d-none d-xl-flex">
+                        <a class="btn btn-np btn-sm" href="#" role="button">Boolean mobile app</a>
+                      </li>
+                      <li class="d-none d-xl-flex">
+                        <a class="btn btn-np btn-sm" href="#" role="button">Boolean web app</a>
+                      </li>
+                      <li class="d-none d-xl-flex">
+                        <a class="btn btn-np btn-sm" href="#" role="button">Boolean blog app</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-5 offset-md-1  p-3">
+                  <h6>Counter</h6>
+                  <span>99</span>
+                </div>
+              </div>
             </div>
-            <div class="col-8  np-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates, voluptatem quas deserunt quae enim delectus ullam illo nobis aliquam atque adipisci quidem inventore dolorem cum veniam cumque asperiores veritatis optio ipsam deleniti quis neque? Animi earum, tempore incidunt deleniti vitae consequuntur necessitatibus molestias quisquam iusto. Animi illum earum numquam et dolorum illo! Sint molestiae, quod necessitatibus ipsam nisi neque provident blanditiis nulla accusantium nobis velit reprehenderit sequi. Et voluptas atque incidunt alias, maxime animi asperiores soluta eligendi repellat voluptates ipsa mollitia delectus in illum sint, consequuntur culpa rerum officiis labore adipisci! Laboriosam sunt repudiandae eum fugit. Laudantium, tempora obcaecati, vero fugiat voluptas maxime nesciunt iure ex unde sed, itaque quae iusto tempore sint architecto dolores corporis inventore ad quasi? Tenetur assumenda quod magnam. Itaque, quam illo dolorem provident labore quod a laborum tempore, ullam, ipsum quaerat consequatur laudantium assumenda obcaecati odio tempora fuga? Velit molestias dignissimos consectetur iste perspiciatis minus hic consequuntur labore. Maiores suscipit consequatur molestias ad dolore dignissimos, incidunt velit. Voluptatem, delectus excepturi vel, quae exercitationem dolore voluptatum nihil ipsum quis natus incidunt corporis! Maxime quia laborum tenetur ad eaque optio ut nam esse, dolore doloribus molestias dignissimos cupiditate! Consectetur dicta nisi praesentium commodi reiciendis in perspiciatis, adipisci eveniet pariatur eius omnis magnam itaque sit numquam veniam dolor reprehenderit officiis aliquid, deleniti, sapiente accusantium ratione impedit quod. Accusamus, unde voluptatem exercitationem, illo, tenetur in assumenda dolorum facilis quaerat mollitia cum rem id reprehenderit perferendis. Sequi minima non corporis iste veniam, aperiam beatae dolorum laudantium omnis, tempore eum optio, molestiae eaque exercitationem. Eligendi quo molestiae quae sint. Esse, possimus. Fugiat iusto, placeat maiores corporis ipsam illo, excepturi obcaecati, veritatis accusamus a voluptates. Autem atque magni labore delectus eveniet minima voluptatum? Ducimus in eius a officiis aspernatur optio sunt, aut voluptas architecto eaque sed? Eos debitis nostrum, eius neque maxime maiores itaque reiciendis deserunt, inventore quia rerum autem similique excepturi, atque labore illum adipisci. Nemo illum pariatur dolorem sunt culpa ipsum libero eveniet dolores id natus laudantium a corrupti, saepe ut accusantium labore debitis facere dolor distinctio dicta minus! Aliquid et adipisci rerum consequuntur expedita iste fugiat libero! Sunt nesciunt a facilis tempora, asperiores nulla quis sed consequuntur rerum. Omnis magni quos deserunt debitis quaerat expedita! Omnis quaerat odio molestias tenetur quasi rerum maiores, a fugit ex autem cupiditate minus eum error repellat temporibus nulla sequi sunt quam tempora nesciunt. Autem eaque id cupiditate, ut, quia, iusto in mollitia sit exercitationem placeat fugit dicta. Incidunt explicabo impedit, sunt reprehenderit vitae nulla at rem officiis possimus exercitationem ea quas aliquid consectetur nostrum eveniet harum pariatur ullam rerum. Deleniti quod, dolorem amet in ipsam impedit error velit sit quis hic explicabo ipsum recusandae et non reiciendis soluta repudiandae tenetur officia, sunt ea? Minus facilis quasi accusamus corporis nesciunt, nostrum repudiandae iure eveniet facere ratione, magni asperiores hic ipsum vel, eum quidem. Voluptatem, veritatis? Excepturi labore repellat, fugiat dolores id odio iste ipsam ducimus consequatur omnis quo nostrum obcaecati eveniet eligendi sequi consequuntur et deleniti perferendis animi. Et voluptatum voluptate pariatur minus natus ipsa quis id consequatur vero, aliquam animi voluptates quam provident expedita in! Nostrum architecto doloribus optio dolorem. Repellat debitis ea voluptatum fugiat accusantium nobis cumque facere quisquam dignissimos nisi? Odio modi animi, sunt quis voluptate officia saepe nihil debitis accusantium. Sunt numquam odit deleniti vel, impedit omnis exercitationem quia labore voluptates blanditiis sint veritatis nemo tenetur quisquam deserunt aliquam eaque magni aliquid placeat similique quibusdam molestias cumque cum. Perferendis dolorum ut, aliquam repellat exercitationem optio repellendus possimus assumenda illum nisi eaque perspiciatis amet nemo nesciunt voluptate at obcaecati porro enim? Ex beatae vero asperiores neque blanditiis architecto nemo, quidem facilis corrupti, tempora, est quia ipsam rerum placeat! Dolore sed esse nisi? Sequi at perspiciatis, facere tempore reiciendis nulla repellendus quaerat eaque officiis eos doloribus nihil animi atque. Vel recusandae odio, illum veniam iusto iure. Dolorum officia eos deleniti assumenda nihil. Sed ullam, consectetur architecto rem iusto, possimus sequi porro delectus aliquid, qui eligendi voluptatem quasi asperiores at quam laudantium ducimus praesentium non. Praesentium ea facilis, ut nam quo possimus quod vero repellendus nemo. Iure magnam vel exercitationem, quam quod expedita voluptas qui molestias quas doloremque delectus quibusdam facilis amet, ad ea quis vitae. Facilis rem ipsa ex nihil tempora soluta dolor, deleniti reprehenderit itaque tenetur doloremque commodi beatae eos necessitatibus error. Vitae dolorem quos voluptatum expedita ea ex nostrum, iusto iure quisquam cum voluptatibus eligendi cupiditate ut earum inventore quis autem harum modi sed similique repellat veritatis ratione, delectus et? Quo id quod fugit soluta expedita, minus laudantium adipisci facere suscipit assumenda in repudiandae, voluptatum ipsa illo repellat libero? Minus dicta iure quis officiis. Iure quod exercitationem accusamus velit veniam sequi et in ea magni voluptatum rem assumenda possimus sit nemo, reiciendis cum? Molestiae nisi optio repellendus magni a, repudiandae perferendis laudantium eum in consequatur. Veniam obcaecati cumque consequatur ipsam accusamus cupiditate unde placeat, a corporis dignissimos quia iusto facere libero necessitatibus at perferendis voluptatem harum ea nobis excepturi, exercitationem culpa dolorum. Facere officiis id ad voluptas. Quae delectus ab fugit tempore eveniet officiis necessitatibus. Animi repudiandae autem mollitia sed nesciunt minus aperiam eum fugit alias, expedita illo, hic nemo id iste natus repellendus atque officia facere in ducimus doloribus. Voluptate, vitae perferendis? Nisi accusamus quos distinctio nam iste possimus error aliquid, modi fugiat dignissimos delectus doloribus magnam illum dicta. Voluptates facilis nemo a incidunt? Fugiat natus ea consequuntur fugit aliquam illum esse mollitia corrupti eius laborum aliquid perferendis cupiditate similique unde inventore dolores maiores ipsa, ab amet enim est soluta hic? Nemo voluptatum provident facere sint dignissimos dolore deserunt temporibus qui aliquam iure quo illo minima assumenda excepturi explicabo non odit, possimus necessitatibus voluptates quibusdam doloremque. Rem voluptatibus deleniti delectus fuga? Iusto voluptate libero facere. Error optio provident aliquam ratione dolor esse saepe fugit veritatis, magnam voluptatibus et repellat consequuntur natus odit placeat dolores repudiandae tempore? Nam exercitationem consequuntur corrupti voluptate accusamus aperiam quo. Laboriosam placeat expedita veniam modi doloribus tempore natus perspiciatis et quidem quis, reiciendis incidunt nisi ex exercitationem! Itaque consequatur fuga, veritatis voluptate expedita aliquid cumque natus id delectus ratione nisi impedit provident, illo nihil quasi ea ad quos sint omnis molestias sit esse pariatur. Quisquam ipsam maiores laboriosam in facere placeat nesciunt id commodi et excepturi, distinctio aspernatur, assumenda laudantium impedit dignissimos animi sapiente. Enim, provident eveniet. Nam alias illo quasi id. Reiciendis soluta, inventore ad ipsum, totam dolorum sapiente facilis placeat animi tenetur, voluptate perferendis! Quibusdam saepe dolores esse dignissimos repellat tempora veritatis eos ea! Quos excepturi sed saepe eos cumque iure quod omnis porro molestias! Dolorem nihil, itaque eaque quo vero dolores laboriosam. Explicabo, adipisci esse reiciendis dignissimos aspernatur ab officia repellat possimus eum similique fugit porro sequi quis quia quo asperiores nemo deserunt modi, laudantium obcaecati? Vel, iste doloribus eos architecto itaque facilis corporis excepturi rem illo cumque nulla quasi tempore aspernatur deserunt! Voluptates nesciunt, ipsa repellat laboriosam suscipit, necessitatibus assumenda perspiciatis, natus aliquid nemo nihil at. Nostrum quaerat natus voluptas dolor quo doloremque nihil saepe praesentium non ratione atque voluptatum, amet, iure hic quam ipsam aut qui? Maiores quam earum architecto commodi maxime adipisci quos mollitia natus, explicabo doloremque, tempore ullam veritatis modi, porro officiis atque facilis voluptatem inventore. Magni at consequatur deserunt voluptatibus maxime sunt commodi officiis alias, modi aliquid pariatur ducimus dolorem, saepe debitis reiciendis sint voluptatum eius odit et odio quo? Ratione ipsam similique officiis modi quia fugit quas, placeat soluta magnam magni quis laborum. Hic quod quam excepturi aliquam aliquid quaerat voluptate eveniet itaque? Repellat iure amet excepturi, nisi ea labore sequi, praesentium aut hic sapiente vel quod ipsa minima eveniet ex. Recusandae, inventore cumque deleniti sapiente non delectus voluptatum aliquid sed fuga dolore praesentium officiis magni, laboriosam autem iste quod incidunt, vitae veniam illo. Cum, eveniet totam vitae quis molestiae doloremque ullam fugiat dolore quia officiis itaque! Deserunt quas dignissimos omnis placeat dolor, voluptas expedita, distinctio consequatur iusto reprehenderit enim ipsum mollitia fugiat magnam laboriosam praesentium, ipsa corrupti sed nam! Sapiente laudantium commodi quibusdam voluptatum! Numquam, magni ea. Fugit a, in non fuga fugiat cumque sit earum illum reprehenderit alias, ex dicta facilis omnis quisquam dolores. Aperiam vel soluta quisquam, cupiditate omnis labore. Deserunt cupiditate ullam, porro numquam atque, et aliquam est itaque corrupti impedit unde nisi inventore delectus. Accusantium, odio! Exercitationem doloremque voluptas saepe, enim magnam ex eaque quibusdam quidem odio suscipit hic veniam iure, esse maiores reprehenderit obcaecati ullam dolorum voluptatum totam a quos labore excepturi! Maiores consequuntur quas facilis voluptates ab, delectus voluptate praesentium. Vel corporis enim fugit modi blanditiis cum est, sunt quis sed. Eos, voluptates. Voluptatum adipisci illo reiciendis voluptatibus rem quidem placeat veritatis excepturi provident vel. Voluptatem aperiam praesentium doloremque? Rerum facere saepe cumque ipsum labore optio cum enim molestiae minima, numquam soluta voluptatem assumenda libero deserunt ut doloribus repellat dicta, minus facilis incidunt. Maiores similique rem voluptate inventore, dolorem voluptas, quo quaerat distinctio laudantium ullam vitae pariatur iste necessitatibus. Deleniti fugiat eligendi distinctio, ipsam corrupti eum voluptate architecto vero esse soluta ullam quasi atque, rem necessitatibus, quaerat odit! Expedita corrupti necessitatibus eos illo, quod unde omnis illum tempore atque laboriosam aliquid ut, libero ex ab odio at amet eum. Voluptatum voluptate qui placeat totam molestias sit minus esse tenetur reiciendis excepturi. Autem non voluptatum consequuntur nemo vel harum, aperiam maxime perspiciatis distinctio porro explicabo ad vitae sequi temporibus tempore velit voluptate repellendus veniam consequatur adipisci sapiente molestias! Omnis aliquam maiores facere officiis dolorem vel, magni praesentium ipsum mollitia quia eius iste quis est id. Impedit nulla reiciendis perspiciatis veniam adipisci iure hic illo. Quisquam, necessitatibus dolorem. Impedit, doloribus iusto et alias eveniet ex consequuntur facilis, enim numquam neque praesentium. Necessitatibus, repellendus minus quibusdam incidunt officia eveniet minima corporis. Optio quasi sunt at molestias asperiores perspiciatis, corrupti exercitationem facilis quia dolorum minus laudantium iure velit dolore. Nisi, sunt. Mollitia eos nisi voluptatem, tenetur consequatur, voluptatibus sapiente autem dolores molestiae quis sequi. Accusantium earum architecto quo aperiam vitae obcaecati quasi in nisi assumenda qui odio tempora nulla aliquam ratione quam culpa, pariatur facilis odit repellat totam! Quis quisquam distinctio in minus explicabo nobis, maiores veniam officiis. Rerum soluta atque ullam quasi, quis delectus ex aut nobis sit aliquam inventore! Magni eaque odit minima ipsa. Vel asperiores animi repellendus quasi sed, ad dicta atque officiis quae delectus quos corporis vitae. Esse omnis ex temporibus recusandae facere! Hic accusamus cum mollitia perferendis fuga pariatur, maxime impedit excepturi neque nihil vero repellendus! Quae expedita excepturi beatae ab, labore cum omnis ratione asperiores eligendi non eveniet quaerat aliquam sapiente laudantium nisi temporibus! Pariatur placeat aliquid necessitatibus dolorem corrupti officiis ab. Tempore unde quae, exercitationem praesentium reprehenderit cupiditate obcaecati iusto dolor consequuntur quod recusandae. Mollitia accusantium, alias inventore quis dignissimos sapiente reprehenderit distinctio magnam ducimus voluptatibus tempora fuga commodi repudiandae, quasi nesciunt aspernatur incidunt neque labore non quaerat quia quae nobis! Neque aliquid reiciendis eligendi magnam quod? Soluta, adipisci. Voluptates eaque praesentium omnis quam, illum at nobis dicta excepturi officia neque, recusandae nulla est accusamus cum a cupiditate dolorum ut perspiciatis sed quidem temporibus quisquam. Optio adipisci ea placeat suscipit delectus quo saepe totam veritatis ratione dolorum, minima corporis molestiae porro ex hic voluptas tenetur recusandae tempore. Dolores odit, illo eveniet, molestiae fugiat minima eligendi harum laboriosam repudiandae earum incidunt veritatis excepturi aperiam, ab animi consectetur dicta. In atque, quisquam quasi, non reiciendis illum laborum vero doloremque iste, est dolores delectus iusto! Sapiente tempore cumque voluptate deserunt obcaecati ipsum, magnam suscipit aut aliquam. Libero distinctio voluptates vitae tenetur quisquam inventore possimus. Ratione magni totam doloremque, praesentium aperiam odio distinctio iure illum. Iusto quasi aliquam molestias repudiandae vel delectus earum, rerum, doloremque nostrum reprehenderit quaerat provident sunt beatae atque expedita optio odit in dolor? Quia doloremque inventore nisi eligendi et amet repellendus possimus mollitia accusamus? Nihil veritatis velit at magnam. Voluptatum mollitia perferendis veritatis in laudantium, ut quisquam quo dolor itaque iusto vitae numquam cupiditate soluta nisi aliquid sequi? Cumque doloribus repudiandae soluta iusto dolorum eligendi placeat nobis accusamus veniam! Rerum omnis est, fugit sunt, rem ad reiciendis cupiditate nisi expedita mollitia iure excepturi velit recusandae quas culpa doloremque et. Quisquam similique ullam exercitationem vero quaerat.
             </div>
-            <div class="col-4  np-right"></div>
+             <!-- Main top-bar -->
+             <!-- Main left-right -->
+             <!-- Main-left -->
+            <div class="col-8  np-left mt-2">
+              <table class="table border w-100">
+                <thead>
+                  <div class="border bg-light d-flex justify-content-between align-items-center p-2">
+                    <h2>Prossime Classi</h2>
+                    <button type="button" class="btn btn-outline-primary">+</button>
+                  </div>
+                  <tr>
+                    <th class="w-50" scope="col">Nome</th>
+                    <th scope="col">Data inizio</th>
+                    <th scope="col">ROI</th>
+                    <th scope="col">Stato</th>
+                    <th scope="col">Azioni</th>
+                  </tr>
+                </thead>
+                <tbody  class="table-group-divider">
+                  <tr>
+                    <td>
+                      <img src="./assets/img/class-avatar.jpg" alt="">Classe 75</th>
+                    <td>15 Feb 2022</td>
+                    <td>20%</td>
+                    <td><button type="button" class="btn btn-success btn-sm">Done</button>
+                    </td>
+                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img src="./assets/img/class-avatar.jpg" alt="">Classe 75</th>
+                    <td>16 Feb 2022</td>
+                    <td>20%</td>
+                    <td><button type="button" class="btn btn-success btn-sm">Done</button>
+                    </td>
+                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img src="./assets/img/class-avatar.jpg" alt="">Classe 75</th>
+                    <td>17 Feb 2022</td>
+                    <td>20%</td>
+                    <td><button type="button" class="btn btn-warning btn-sm btn-np">Process</button>
+                    </td>
+                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img src="./assets/img/class-avatar.jpg" alt="">Classe 75</th>
+                    <td>18 Feb 2022</td>
+                    <td>20%</td>
+                    <td><button type="button" class="btn btn-success btn-sm">Done</button>
+                    </td>
+                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img src="./assets/img/class-avatar.jpg" alt="">Classe 75</th>
+                    <td>19 Feb 2022</td>
+                    <td>20%</td>
+                    <td><button type="button" class="btn btn-danger btn-sm">Failed</button>
+                    </td>
+                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img src="./assets/img/class-avatar.jpg" alt="">Classe 75</th>
+                    <td>20 Feb 2022</td>
+                    <td>20%</td>
+                    <td><button type="button" class="btn btn-success btn-sm">Done</button>
+                    </td>
+                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img src="./assets/img/class-avatar.jpg" alt="">Classe 75</th>
+                    <td>21 Feb 2022</td>
+                    <td>20%</td>
+                    <td><button type="button" class="btn btn-danger btn-sm">Failed</button>
+                    </td>
+                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img src="./assets/img/class-avatar.jpg" alt="">Classe 75</th>
+                    <td>22 Feb 2022</td>
+                    <td>20%</td>
+                    <td><button type="button" class="btn btn-success btn-sm">Done</button>
+                    </td>
+                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="border  my-4">
+              <div class="bg-light px-3 py-1 ">
+                <h2>F.A.Q</h2>
+                </div>
+              <div class="accordion accordion-flush px-3" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Quanto fa 2+2
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <strong>4
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Cliccami
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <strong>Wow
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Chi vince le Champions ?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>Manchester City
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Oppure
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>Real Madrid
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- Main-left -->
+            <!-- Main right -->
+            <div class="col-4  np-right">
+              
+            </div>
+            <!-- Main right -->
+            <!-- Main left-right -->
           </div>
         </div>
         <!-- Main-content -->

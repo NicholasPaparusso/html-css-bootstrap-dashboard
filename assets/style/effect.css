@@ -1,0 +1,28 @@
+/* Header */
+/* Header */
+/* Aside */
+
+
+.aside a:hover{
+background-color: rgba(255, 255, 255, .2);
+}
+/* Aside */
+
+/* Main top-bar */
+
+.np-top .btn-np:hover{
+  background-color: #104284;
+}
+.np-top h2 a:hover {
+  background-color: #155cba;
+  border-radius: 20px;
+  padding: 5px;
+}
+/* Main top-bar */
+
+/* Main-left */
+.np-left table tr:hover{
+  background-color: lightgray;
+  cursor: pointer;
+}
+/* Main-left */

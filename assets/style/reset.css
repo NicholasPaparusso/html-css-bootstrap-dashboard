@@ -1,13 +1,4 @@
-*,
-*::after,
-*::before
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul, ol{
+ul, ol, li{
   list-style: none;
 }
 
@@ -16,6 +7,15 @@ a{
   color: unset;
 }
 
+a:hover, link:hover{
+  text-decoration: none;
+  color: unset;
+}
+
 html{
   scroll-behavior: smooth;
+}
+
+img{
+  width: 100%;
 }

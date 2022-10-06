@@ -1,0 +1,19 @@
+@media screen and (max-width: 1199px) {
+  header .dropdown-menu{
+    right: -85px !important;
+    transform: translate(0 , 0) !important;
+  }
+
+
+  .aside ul li a small, .aside a small{
+    display: none;
+  }
+
+  .aside i {
+    margin-right: 0;
+  }
+
+  .aside .fa-house{
+    font-size: 1.9vh;
+  }
+}
